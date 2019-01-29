@@ -35,10 +35,8 @@ $(function(){
       data: { keyword: input },
       dataType: 'json'
     })
-    .always(function(){
-      $search_result.empty();
-    })
     .done(function(users){
+      $search_result.empty();
       if (users.length !== 0){
         users.forEach(function(user){
           appendUsers(user);
