@@ -46,5 +46,9 @@ $(function(){
     .fail(function(){
       console.log("no");
     })
-  })
+  });
+
+  $("#user-search-result").on('click', ".chat-group-user__btn--add", function(){
+    console.log("hello");
+  });
 });
